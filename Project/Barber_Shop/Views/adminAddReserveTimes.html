@@ -1,0 +1,19 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>Add Reserve Times</h3>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="adminAddReserveTimes.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>Date</label>
+                <input type="date" placeholder="Enter Date" name="uiDate" value="<?php echo $uiDate_cv; ?>">
+
+                <label>Time</label>
+                <input type="time" placeholder="Enter Time" name="uiTime" value="<?php echo $uiTime_cv; ?>">
+
+                <button type="submit" name="uiAdd">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

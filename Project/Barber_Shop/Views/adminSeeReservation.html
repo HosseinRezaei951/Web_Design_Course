@@ -1,0 +1,23 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center">
+                <h1>All Reservations</h1>
+                <div class="row">
+                    <div ng-controller="SeeReservationController">
+                        <div ng-repeat="r in list" class="col-md-4 col-sm-6">
+                            <div class="card">
+                                <h4><b>{{r.username}}</b></h4>
+
+                                <div class="text-container">Date: {{r.date}}</div>
+                                <div class="text-container">Model ID: {{r.modelID}}</div>
+                                <div class="text-container">Description: {{r.description}}</div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

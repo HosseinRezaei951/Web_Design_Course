@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Page tittle -->
+    <title>Barber Shop</title>
+
+    <!-- Page icon -->
+    <link rel="icon" href="Assets/images/favicon.png">
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Angular -->
+    <script src="Assets/js/angular/angular.js"></script>
+    <script src="Assets/js/angular/angular-resource.js"></script>
+
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+    <!-- Main style CSS -->
+    <link rel="stylesheet" href="Assets/css/style.css">
+
+    <?php
+        if (basename($_SERVER['PHP_SELF']) == 'login.php' ||
+        basename($_SERVER['PHP_SELF']) == 'register.php'||
+        basename($_SERVER['PHP_SELF']) == 'adminLogin.php' ||
+        basename($_SERVER['PHP_SELF']) == 'adminRegister.php'||
+        basename($_SERVER['PHP_SELF']) == 'adminPanel.php'||
+        basename($_SERVER['PHP_SELF']) == 'adminWorkSamples.php'||
+        basename($_SERVER['PHP_SELF']) == 'adminModel.php'||
+        basename($_SERVER['PHP_SELF']) == 'adminAddReserveTimes.php')
+        {
+        echo '
+            <!-- Login CSS -->
+            <link rel="stylesheet" href="Assets/css/login.css" />
+        ';
+        }
+        elseif(basename($_SERVER['PHP_SELF']) == 'searchTime.php'||
+             basename($_SERVER['PHP_SELF']) == 'setReserve.php'||
+             basename($_SERVER['PHP_SELF']) == 'adminSeeReservation.php')
+        {
+            echo '
+            <!-- Login CSS -->
+            <link rel="stylesheet" href="Assets/css/login.css" />
+
+            <!-- Requirements -->
+            <script src="Assets/js/main.js"></script>
+            ';
+        }
+        else
+        {
+        echo '            
+            <!-- Requirements -->
+            <script src="Assets/js/main.js"></script>
+        ';
+        }	
+      
+  	?>
+</head>
+
+<body>
+
+    <?php
+        if (basename($_SERVER['PHP_SELF']) == 'index.php'||
+            basename($_SERVER['PHP_SELF']) == 'reserve.php'||
+            basename($_SERVER['PHP_SELF']) == 'userReservations.php')
+        {
+            echo '
+            <div ng-app="MainApp">
+            <div ng-controller="BarberShopInfoController">
+                <div class="Header" style="background-image: url(Assets/images/big_image_1.jpg);">
+                    <div class="quick-info">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-center">
+                                        <span class="subheading">Welcome to {{list.name}}</span>
+                                        <h1 class="text">We are professional care for your hair</h1>
+                                        <p><a href="reserve.php">Reserve An Appointment</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <div class="quick-info-card">
+                                        <h4><b>Address</b></h4>
+                                        <p>{{list.address}}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="quick-info-card">
+                                        <h4><b>Phone Number</b></h4>
+                                        <p>{{list.phoneNumber}}</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="quick-info-card">
+                                        <h4><b>License Number</b></h4>
+                                        <p>{{list.licenseNumber}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            ';        
+        }elseif(basename($_SERVER['PHP_SELF']) == 'adminSeeReservation.php')
+    {
+        echo '<div ng-app="MainApp">';
+                
+    }
+        
+      
+  	?>

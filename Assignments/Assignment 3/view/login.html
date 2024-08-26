@@ -1,0 +1,20 @@
+<div class="Content">
+    <div class="loginContainer">
+        <span><?php echo $Message; ?></span>
+        <form action="login.php" method="post">
+            <div class="container">
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" name="uiUsername">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="uiPassword">
+
+                <div class="g-recaptcha" data-sitekey="6Ldp5sEUAAAAAI5OLXBjApGCoG4vYGxJTQnXxjMb"></div>
+
+                <button type="submit" name="uiLogin">Login</button>
+                <a href="forgetPassword.php ">Forget Password</a> |
+                <a href="register.php ">Register</a>
+            </div>
+        </form>
+    </div>
+</div>

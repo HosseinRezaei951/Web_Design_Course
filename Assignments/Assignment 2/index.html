@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Validation Form</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+    <form method="post">
+        <h2>Validation</h2>
+        <p>
+            <label class="floatLabel">Number in range [0-9]</label>
+            <input id="number" type="text" required>
+            <span>Enter a number in range [0-9]</span>
+        </p>
+        <p>
+            <label class="floatLabel">Number in range [0-9] with 10 digit</label>
+            <input id="number2" type="text" required>
+            <span>Enter a number in range [0-9] with 10 digit</span>
+        </p>
+        <p>
+            <label class="floatLabel">Email</label>
+            <input id="email" type="text" required>
+            <span>Enter a valid email</span>
+        </p>
+        <p>
+            <label class="floatLabel">Url</label>
+            <input id="url" type="text" required>
+            <span>Enter a valid url</span>
+        </p>
+
+        <p>
+            <input type="button" value="Check Validation" id="submit" onclick="canSubmit()">
+            <div id="validateMSG"></div>
+        </p>
+    </form>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

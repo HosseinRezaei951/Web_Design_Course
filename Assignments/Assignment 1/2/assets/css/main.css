@@ -1,0 +1,29 @@
+.coloringDiv:first-child {
+    background: cyan;
+    text-align: center;
+    height: 100px;
+}
+
+.coloringDiv:nth-child(2) {
+    background: red;
+    text-align: center;
+    height: 100px;
+}
+
+.coloringDiv:nth-child(3) {
+    background: blue;
+    text-align: center;
+    height: 100px;
+}
+
+.coloringDiv:nth-child(4) {
+    background: green;
+    text-align: center;
+    height: 100px;
+}
+
+.coloringDiv:nth-child(5) {
+    background: yellow;
+    text-align: center;
+    height: 100px;
+}

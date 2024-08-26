@@ -1,0 +1,28 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>Add New Model</h3>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="adminModel.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>Model Name</label>
+                <input type="text" placeholder="Enter Model Name" name="uiModelName" value="<?php echo $uiModelName_cv; ?>">
+
+                <label>Model Category</label>
+                <input type="text" placeholder="Enter Model Category" name="uiModelCategory" value="<?php echo $uiModelCategory_cv; ?>">
+
+                <label>Photo</label>
+                <input type="file" placeholder="Enter Photo" name="uiPhoto" value="<?php echo $uiPhoto_cv; ?>">
+
+                <label>Price</label>
+                <input type="text" placeholder="Enter Price" name="uiPrice" value="<?php echo $uiPrice_cv; ?>">
+
+                <label>Description</label>
+                <input type="text" placeholder="Enter Description" name="uiDescription" value="<?php echo $uiDescription_cv; ?>">
+
+                <button type="submit" name="uiAdd">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

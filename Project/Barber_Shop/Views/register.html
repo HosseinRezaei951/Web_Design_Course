@@ -1,0 +1,32 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>User Register</h3>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="register.php" method="post">
+            <div class="container">
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name" name="uiName" value="<?php echo $uiName_cv; ?>">
+
+                <label>Family</label>
+                <input type="text" placeholder="Enter Family" name="uiFamily" value="<?php echo $uiFamily_cv; ?>">
+
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter Phone Number" name="uiPhoneNumber" value="<?php echo $uiPhoneNumber_cv; ?>">
+
+                <label>Username</label>
+                <input type="text" placeholder="Enter Username" name="uiUsername" value="<?php echo $uiUsername_cv; ?>">
+
+                <label>Password</label>
+                <input type="password" placeholder="Enter Password" name="uiPassword">
+
+                <label>Confirm Password</label>
+                <input type="password" placeholder="Confirm Password" name="uiConfirmPassword">
+
+                <button type="submit" name="uiRegister">Register</button>
+                <a href="login.php">Login</a>
+            </div>
+        </form>
+    </div>
+</div>

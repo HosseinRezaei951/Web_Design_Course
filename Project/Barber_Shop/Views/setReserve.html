@@ -1,0 +1,17 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>Set Description</h3>
+            <h5>Set any other description</h5>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="setReserve.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>Description</label>
+                <input type="text" placeholder="Enter Your Description" name="uiDescription" value="<?php echo $uiDescription_cv; ?>">
+
+                <button type="submit" name="uiSetReserve">Set</button>
+            </div>
+        </form>
+    </div>
+</div>

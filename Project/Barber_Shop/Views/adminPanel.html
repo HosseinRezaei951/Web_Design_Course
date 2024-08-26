@@ -1,0 +1,31 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>Update Barber Information</h3>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="adminPanel.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>License Number</label>
+                <input type="text" placeholder="Enter License Number" name="uiLicenseNumber" value="<?php echo $uiLicenseNumber_cv; ?>">
+
+                <label>Name</label>
+                <input type="text" placeholder="Enter Name" name="uiName" value="<?php echo $uiName_cv; ?>">
+
+                <label>Phone Number</label>
+                <input type="text" placeholder="Enter Phone Number" name="uiPhoneNumber" value="<?php echo $uiPhoneNumber_cv; ?>">
+
+                <label>Photo</label>
+                <input type="file" placeholder="Enter Photo" name="uiPhoto" value="<?php echo $uiPhoto_cv; ?>">
+
+                <label>Logo</label>
+                <input type="file" placeholder="Enter Logo" name="uiLogo" value="<?php echo $uiLogo_cv; ?>">
+
+                <label>Address</label>
+                <input type="text" placeholder="Enter Address" name="uiAddress" value="<?php echo $uiAddress_cv; ?>">
+
+                <button type="submit" name="uiUpdate">Update</button>
+            </div>
+        </form>
+    </div>
+</div>

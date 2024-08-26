@@ -1,0 +1,21 @@
+<div class="Content">
+    <div class="loginContainer">
+        <span><?php echo $htmlData; ?></span>
+        <div class="text-center">
+            <h3>Search Time For Reservation</h3>
+            <h5>Search available times between start date and end date</h5>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="searchTime.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>Start Date</label>
+                <input type="date" placeholder="Enter Start Date" name="uiDate1" value="<?php echo $uiDate1_cv; ?>">
+
+                <label>End Date</label>
+                <input type="date" placeholder="Enter End Date" name="uiDate2" value="<?php echo $uiDate2_cv; ?>">
+
+                <button type="submit" name="uiSearch">Search</button>
+            </div>
+        </form>
+    </div>
+</div>

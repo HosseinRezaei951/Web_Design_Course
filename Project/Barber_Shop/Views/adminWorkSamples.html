@@ -1,0 +1,22 @@
+<div class="Content">
+    <div class="loginContainer">
+        <div class="text-center">
+            <h3>Add New Work Sample</h3>
+        </div>
+        <span><?php echo $Message; ?></span>
+        <form action="adminWorkSamples.php" method="post" enctype="multipart/form-data">
+            <div class="container">
+                <label>Model Name</label>
+                <input type="text" placeholder="Enter Model Name" name="uiModelName" value="<?php echo $uiModelName_cv; ?>">
+
+                <label>Photo</label>
+                <input type="file" placeholder="Enter Photo" name="uiPhoto" value="<?php echo $uiPhoto_cv; ?>">
+
+                <label>Description</label>
+                <input type="text" placeholder="Enter Description" name="uiDescription" value="<?php echo $uiDescription_cv; ?>">
+
+                <button type="submit" name="uiAdd">Add</button>
+            </div>
+        </form>
+    </div>
+</div>

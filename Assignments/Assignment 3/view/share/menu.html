@@ -1,0 +1,32 @@
+<div class="topnav">
+    <a>
+        <?php echo $WelcomeMessage; ?>
+    </a>
+    <?php 
+            if (basename($_SERVER['PHP_SELF']) == 'home.php')
+            {
+                echo ' 
+                    <a class="active" href="home.php">Home</a>
+                    <a href="contact.php">Contact</a>
+                    <a href="about.php">About</a>
+                ';
+            }	
+            elseif (basename($_SERVER['PHP_SELF']) == 'contact.php')
+            {
+                echo ' 
+                    <a href="home.php">Home</a>
+                    <a class="active" href="contact.php">Contact</a>
+                    <a href="about.php">About</a>
+                ';
+            }
+            elseif (basename($_SERVER['PHP_SELF']) == 'about.php')
+            {
+                echo ' 
+                    <a href="home.php">Home</a>
+                    <a href="contact.php">Contact</a>
+                    <a class="active" href="about.php">About</a>
+                ';
+            }	
+        ?>
+    <a href="login.php" style="float: right;">Sign Out</a>
+</div>

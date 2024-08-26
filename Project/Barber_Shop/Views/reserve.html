@@ -1,0 +1,26 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="text-center">
+                <h1>Models</h1>
+                <h3>choose one model or <a href="searchTime.php?ModelID=-1">Click here</a> for reservation </h3>
+                <div class="row">
+                    <div ng-controller="ModelsController">
+                        <div ng-repeat="r in list" class="col-md-4 col-sm-6">
+                            <a href="searchTime.php?ModelID={{r.ID}}">
+                                <div class="card">
+                                    <h4><b>{{r.modelName}}</b></h4>
+                                    <img class="image" ng-src="{{r.photo}}">
+                                    <div class="text-container">Price: {{r.price}} Tomans</div>
+                                    <div class="text-container">Category: {{r.modelType}}</div>
+                                    <div class="text-container">Description: {{r.description}}</div>
+
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

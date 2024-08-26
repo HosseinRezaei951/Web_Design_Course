@@ -1,0 +1,135 @@
+<div class="topnav">
+    <?php 
+        if (basename($_SERVER['PHP_SELF']) == 'index.php')
+        {
+            echo ' 
+                <a class="active" href="index.php">Home</a>
+                <a href="reserve.php">Reserve</a>
+                <a href="userReservations.php">Reservations</a>
+                <a href="about.php">About</a>
+                <a href="login.php">Sign In</a>
+            ';
+        }	
+        elseif (basename($_SERVER['PHP_SELF']) == 'reserve.php')
+        {
+            echo ' 
+                <a href="index.php">Home</a>
+                <a class="active" href="reserve.php">Reserve</a>
+                <a href="userReservations.php">Reservations</a>
+                <a href="about.php">About</a>
+                <a href="login.php">Sign In</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'searchTime.php')
+        {
+            echo ' 
+                <a href="index.php">Home</a>
+                <a class="active" href="reserve.php">Reserve</a>
+                <a href="userReservations.php">Reservations</a>
+                <a href="about.php">About</a>
+                <a href="login.php">Sign In</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'setReserve.php')
+        {
+            echo ' 
+                <a href="index.php">Home</a>
+                <a class="active" href="reserve.php">Reserve</a>
+                <a href="userReservations.php">Reservations</a>
+                <a href="about.php">About</a>
+                <a href="login.php">Sign In</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'userReservations.php')
+        {
+            echo ' 
+                <a href="index.php">Home</a>
+                <a href="reserve.php">Reserve</a>
+                <a class="active" href="userReservations.php">Reservations</a>
+                <a href="about.php">About</a>
+                <a href="login.php">Sign In</a>
+            ';
+        }
+        
+        elseif (basename($_SERVER['PHP_SELF']) == 'login.php' ||
+                basename($_SERVER['PHP_SELF']) == 'register.php') 
+        {
+            echo ' 
+                <a href="index.php">Back to Home</a>
+            ';
+        }
+
+        
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminPanel.php')
+        {
+            echo ' 
+                <a class="active" href="adminPanel.php">Info</a>
+                <a href="adminWorkSamples.php">Work Sampels</a>
+                <a href="adminModel.php">Models</a>
+                <a href="adminAddReserveTimes.php">Add Reserve Times</a>
+                <a href="adminSeeReservation.php">See Reservations</a>
+                <a href="adminRegister.php">Admin Register</a>
+                <a href="adminLogin.php">Sign Out</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminWorkSamples.php')
+        {
+            echo ' 
+                <a href="adminPanel.php">Info</a>
+                <a class="active"  href="adminWorkSamples.php">Work Sampels</a>
+                <a href="adminModel.php">Models</a>
+                <a href="adminAddReserveTimes.php">Add Reserve Times</a>
+                <a href="adminSeeReservation.php">See Reservations</a>
+                <a href="adminRegister.php">Admin Register</a>
+                <a href="adminLogin.php">Sign Out</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminModel.php')
+        {
+            echo ' 
+                <a href="adminPanel.php">Info</a>
+                <a href="adminWorkSamples.php">Work Sampels</a>
+                <a class="active"  href="adminModel.php">Models</a>
+                <a href="adminAddReserveTimes.php">Add Reserve Times</a>
+                <a href="adminSeeReservation.php">See Reservations</a>
+                <a href="adminRegister.php">Admin Register</a>
+                <a href="adminLogin.php">Sign Out</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminAddReserveTimes.php')
+        {
+            echo ' 
+                <a href="adminPanel.php">Info</a>
+                <a href="adminWorkSamples.php">Work Sampels</a>
+                <a href="adminModel.php">Models</a>
+                <a class="active" href="adminAddReserveTimes.php">Add Reserve Times</a>
+                <a href="adminSeeReservation.php">See Reservations</a>
+                <a href="adminRegister.php">Admin Register</a>
+                <a href="adminLogin.php">Sign Out</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminSeeReservation.php')
+        {
+            echo ' 
+                <a href="adminPanel.php">Info</a>
+                <a href="adminWorkSamples.php">Work Sampels</a>
+                <a href="adminModel.php">Models</a>
+                <a class="active" href="adminAddReserveTimes.php">Add Reserve Times</a>
+                <a href="adminSeeReservation.php">See Reservations</a>
+                <a href="adminRegister.php">Admin Register</a>
+                <a href="adminLogin.php">Sign Out</a>
+            ';
+        }
+        elseif (basename($_SERVER['PHP_SELF']) == 'adminLogin.php'||
+                basename($_SERVER['PHP_SELF']) == 'adminRegister.php') 
+        {
+            echo ' 
+                <a href="index.php">Back to Home</a>
+                <a href="adminPanel.php">Back to Admin Panel</a>
+            ';
+        }			
+        
+    ?>
+
+
+</div>

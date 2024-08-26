@@ -1,0 +1,17 @@
+</div>
+
+<?php
+        if (basename($_SERVER['PHP_SELF']) != 'login.php' &&
+        basename($_SERVER['PHP_SELF']) != 'register.php'&&
+        basename($_SERVER['PHP_SELF']) != 'forgetPassword.php'&&
+        basename($_SERVER['PHP_SELF']) != 'changePassword.php')
+        {
+            echo '
+            <div class="Footer">Footer</div>
+            
+            ';
+        }
+?>
+    </body>
+
+    </html>
